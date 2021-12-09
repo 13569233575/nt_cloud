@@ -13,6 +13,7 @@
 
     <modules>
         <module>nt_gateway</module>
+        <module>nt_cd_common</module>
     </modules>
 
     <properties>
