@@ -21,7 +21,7 @@ public class ApplicationLoggerInitializer implements ApplicationContextInitializ
         String logBase = environment.getProperty("LOGGING_PATH", "/home/nt/sclog/logs");
         String logpath = environment.getProperty("LOGGING_PATH",System.getProperty("user.home")+ File.separator + "sclog");
         log.info("路径地址： " + logBase + " 机器本身路径地址： " + logpath);
-        System.setProperty("logging.file.name", String.format("%s/%s/debug.log", logBase, appName));
-        //System.setProperty("logging.file.name", String.format("%s/%s/debug.log", logpath, appName));
+        //System.setProperty("logging.file.name", String.format("%s/%s/debug.log", logBase, appName));
+        System.setProperty("logging.file.name", String.format("%s/%s/debug.log", logpath, appName));
     }
 }
